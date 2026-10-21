@@ -1,58 +1,42 @@
-# WNXVRA — Beyond Limits
+# WNXVRA
 
-A personal portfolio built with HTML, CSS and JavaScript, featuring a Chinese-inspired red-and-gold theme, dragon artwork, animated palace gates, fire effects, background music and interactive skill upgrades.
+My personal website. I built it around a red and gold Chinese theme because I wanted
+something that didn't look like every other portfolio.
 
-**Dream. Build. Create. Conquer.**
+It's plain HTML, CSS and JavaScript. No framework and no build step.
 
-## Getting Started
+## Why I made it
 
-Open `index.html` in your browser.
+WNXVRA is the name I use for the things I build: games, AI projects and software. I'm
+still at the beginning, and I wanted one place that shows where I am now and has room
+to grow as I learn more. The tagline sums it up: Dream. Build. Create. Conquer.
 
-For the three-file version, keep these files together:
+## Built with
 
-```text
-three-file-version/
-├── index.html
-├── style.css
-├── script.js
-└── music.mp3
-```
+- Plain HTML, CSS and JavaScript, split into a few small files
+- CSS custom properties for the colours, so the whole theme can change from one place
+- The native `<dialog>` element for the popups
+- Canvas for the fire cursor and the falling petals
+- `IntersectionObserver` for the effects that happen as you scroll
+- Google Fonts for the lettering
 
-To run a local server:
+## What's next
 
-```bash
-cd three-file-version
-python3 -m http.server 8000
-```
+Things I want to add as the site:
 
-Open `http://localhost:8000`.
+- A projects section for Verxxor, my 2D platformer, and for the car game I'm planning
+- A contact section
+- A switch between English and Chinese
+- More skills on the Upgrade button as I learn them
 
-## Features
+## Things to know
 
-- Animated palace gates and dragon artwork
-- Interactive fire cursor and visual effects
-- Background music with playback controls
-- Skill cards, popups and upgrade system
-- Responsive layout and reduced-motion support
-- Scroll animations and navigation
+Browsers block music until you've interacted with the page. That's why the gates
+sometimes wait for a click: the click is what lets the music start. If the browser does
+allow autoplay, the gates open by themselves.
 
-## Customization
+The cursor effects only run when there's a mouse, so phones and tablets don't get them.
+Anyone with reduced motion turned on gets no gates, fire, petals or scrolling band.
 
-- **Text and content:** `index.html`
-- **Colors, layout and animations:** `style.css`
-- **Interactions and effects:** `script.js`
-- **Background music:** `music.mp3`
-
-Google Fonts requires an internet connection. Browser settings may prevent music from autoplaying.
-
-## Deployment
-
-Deploy the website using GitHub Pages, Netlify, Vercel or any static web host.
-
-## Credits
-
-Music and dragon artwork were supplied by the site owner. Check their usage rights before publishing.
-
----
-
-*Dream. Build. Create. Conquer.*
+I've only tested it in Chromium. Try it on your phone and in other browsers before you
+rely on it.
